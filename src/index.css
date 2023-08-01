@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
+  margin-top: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.WordDisplay {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.GuessesRemaining {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.Letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Letters button {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.Letters button.UsedLetter {
+  background-color: #ddd;
+  cursor: not-allowed;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.WinMessage,
+.LoseMessage {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.RestartButton {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.RestartButton:hover {
+  background-color: #45a049;
 }
